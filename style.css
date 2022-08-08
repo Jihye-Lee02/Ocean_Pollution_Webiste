@@ -1,0 +1,238 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body, html {
+ height: 100%;
+  font-size: 20px;                     
+  font-family: "Roboto", sans-serif;   
+  line-height: 1.5em;                  
+  margin: 0em;
+  color: white;                        
+  background-color: #299bd8;           
+  box-sizing: border-box;
+}
+ 
+ 
+
+
+
+/* STYLE TEXT */
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 45px;
+  /*TODO: Change the font-family property to your linked font*/
+  font-family: "Roboto Mono", sans-serif;
+  color: rgb(0, 99, 5);
+  text-align: center;
+	padding-bottom: 10px;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif;
+  color:rgb(55, 236, 200);
+  text-align: center;
+  line-height: 1.3em;
+}
+.text {
+  background-color: #076191;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+  top: 50%;
+}
+
+
+/* STYLE IMAGES */
+
+/* STYLE NAV BAR */
+ul {
+  list-style-type: none;
+  background-color: #299bd8;
+  overflow: hidden;
+  padding: 1em;
+  text-align: right;
+}
+
+li {
+  display: inline;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+	padding: 1em;
+	font-family: "Courier New", serif;
+	letter-spacing: 0px;
+}
+
+li a:hover {
+  background-color: #6ac8f0;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #6ac8f0;
+  padding: 14px;
+
+  position: absolute;
+
+  left: 16%;
+  right: 16%;
+  top:50%;
+}
+
+.text-header {
+  padding: 4%;
+  margin: 2%;
+  color: #0c4767;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  border: solid white 3px;
+	padding-bottom: 1em;
+}
+
+/* STYLE BUTTONS */
+button{
+	font-family: italic;
+	font-size: 30px;
+	background-color: #005a8a; 
+	color: white;
+	border-width: 3px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+button:hover{
+	background-color: rgb(63, 189, 231);
+}
+
+/* ADD MORE! */
+.main,
+.image-one,
+.image-one2,
+.image-two2,
+.image-three2{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /*Adjust the gap between sections*/
+
+  /*Creates the scrolling effect*/
+  background-attachment: fixed;
+}
+.main {
+  background-image: url(assets/water.jpg);
+}
+.image-one {
+  background-image: url(assets/clean.jpg);
+}
+.image-one2 {
+  background-image: url(assets/bag.jpg);
+}
+.image-two2 {
+  background-image: url(assets/cleaning.jpg);
+}
+.image-three2 {
+ background-image: url(assets/Sope.jpg);
+}
+@media only screen and (max-width: 650px) {
+  .main,
+  .image-one,
+  .image-three,
+  .image-four {
+    background-attachment: scroll;
+  }
+  .box {
+    flex-wrap: wrap;
+    top: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+  .main,
+  .image-one,
+  .image-one2,
+  .image-two2,
+  .image-three2{
+    background-attachment: fixed;
+  }
+
+  .main {
+    height: 50%;
+  }
+
+  .text {
+    margin: 1.5% 15%;
+    font-size: 20px;
+    line-height: 1.5em;
+    
+  }
+  
+  .box {
+    flex-wrap: nowrap;
+    left: 25%;
+    right: 25%;
+    top: 50%;
+  }
+}
+.letter{
+	background-color:  #70c8f8; 
+	
+	border-width: 3px;
+
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	margin-top: 60px;
+	margin-left: 35%;
+	margin-right:35%;
+
+	font-family:italic;
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 2em;
+	color: white;
+}
+.letterItem{
+  margin-top:10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#video {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+#completeLetter {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 35px;
+
+}
